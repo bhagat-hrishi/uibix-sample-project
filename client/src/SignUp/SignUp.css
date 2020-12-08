@@ -1,0 +1,162 @@
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.signup-left-part{
+    width: 50%;
+}
+
+.signup-right-part{
+    width: 50%;
+}
+
+.signup-left-part{
+    padding: 5rem;
+}
+
+/* For Back to home */
+.signupbacktohomepage{
+    color: #2E5BFF;
+    position: fixed; 
+    margin-left: 0%;  
+    margin-top: -5%; 
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+.signupbacktohomepage:hover{
+    color: #012A93;
+}
+.signupfromname{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* For nav links */
+nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:first-child{
+    width: 45%;
+    margin-right:5%;
+}
+nav a:last-child {
+    width: 50%;
+}
+
+/* To change bottom border */
+.inactive-link{
+    
+    border-bottom: 3px solid #e0e7ff ;
+}
+.active-link{
+    border-bottom: 3px solid #2e5bff ;
+}
+
+Link{
+    color: #2E5BFF;
+}
+
+#personal-info{
+    width: 100%;
+}
+#account-details{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    background: #e0e7ff;
+    padding: .5rem;
+}
+input{
+    background: #e0e7ff;
+    outline: none;
+}
+
+.input-label{
+    font-family: "Circular Std Book";
+    color: #8C98A9;
+}
+
+.signupbutton{
+    background: #012A93;
+    cursor: pointer;
+}
+.signupbutton:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* For title on right part image */
+.title{
+    z-index: 1000;
+    position: fixed; 
+    margin-left: 5%;  
+    margin-top: 1%; 
+    color: #012A93;
+}
+/* For right image */
+.signup-right-part img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.errormessage{
+    color:#ff6d6d;
+    font-size: 0.8rem;
+}
+
+.successMessage{
+    color: #5cb85c;
+}
+.confirmationerrormessage{
+    color: #df4949;
+}
+
+#confirmataion-message{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* For making it responsive  */
+@media screen and (max-width:800px){
+        .signupbacktohomepage{
+            margin-top: 0;
+            margin-left: 0;
+            position: static;
+            padding-top: 0;
+        }
+
+        .signup-left-part{
+            padding: 2rem;
+            
+        }
+}
+
+@media screen and (max-width:480px){
+       .signup-right-part{
+           display: none;
+       }
+       .signup-left-part{
+           width: 100%;
+           z-index: 100;
+       }
+       .signupbacktohomepage{
+           float: right;
+           margin-top: -5%;
+       }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.signin-left-part{
+    width: 50%;
+}
+
+.signin-right-part{
+    width: 50%;
+}
+
+
+
+.signin-left-part img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Go back to home page */
+.signinbacktohomepage{
+    color: #2E5BFF;
+    margin-left: 5%;  
+    margin-top: 0%; 
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.signinbacktohomepage:hover{
+    color: #012A93;
+}
+ 
+/* Right part start */
+.right-part-heading{
+    margin-left: 5%;  
+    margin-top: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signin-right-part form{
+     padding: 10rem;
+}
+
+
+/* For making it responsive */
+@media screen and (max-width:1200px){
+    .signin-right-part form{
+        padding: 8rem;
+    }
+}
+@media screen and (max-width:1000px){
+     signin-left-part img{
+         height: 100vh;
+     }
+    
+    .signin-right-part form{
+        padding: 5rem;
+    }
+}
+@media screen and (max-width:700px){
+       .signin-right-part form{
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width:480px){
+   
+     .signin-left-part{
+           display: none;
+    }
+       .signin-right-part{
+           width: 100%;
+    }
+}
+
+

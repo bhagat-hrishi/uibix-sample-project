@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Ovo', serif;
+        }
+        .homepage{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);;
+        }
+
+        .main-name{
+            text-align: center;
+            padding-top:30vh;
+            font-size: 5rem;
+            
+        }
+
+        .homepagelinks{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .signup-link{
+            width: auto;
+            padding: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #0b0c10;
+
+            margin-right: 2%;
+            cursor: pointer;
+        }
+        .signin-link{
+            width: auto;
+            padding: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #0b0c10;
+            margin-left: 2%;
+            cursor: pointer;
+        }
+        .signin-link:hover,
+        .signup-link:hover{
+            background: linear-gradient(45deg, #00B5F5, #002A8F);
+            color:white;
+            font-weight: bold;
+        }
+
+
+marquee{
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+/* For Signin and sign up */
+
+
+
+
+.go-opposite-component{
+    text-align: center;
+}
+
+.go-opposite-component-link{
+    color:#2E5BFF;
+    text-decoration : none ;
+    
+}
+
+
+
+/* For Social media Icons*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+.social-container {
+  width: 50%;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  -webkit-transition: all 265ms ease-out;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-transition: all 265ms ease-out;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 265ms ease-in;
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 265ms ease-in;
+  transition: all 265ms ease-in;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width:480px){
+    .social-container{
+        margin-top: 7vh;
+    }
+}
