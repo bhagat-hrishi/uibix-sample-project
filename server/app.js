@@ -41,7 +41,7 @@ app.use('/',(req,res)=>{
 
 
 
-const port = 9000 || process.env.PORT;//declare port
+const port = process.env.PORT || 3001;//declare port
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder

@@ -120,7 +120,7 @@ export class SignInForm extends Component {
                 name : this.state.forminputname,
                 password: this.state.forminputpassword
             }
-            axios.post('http://localhost:9000/signin',user)
+            axios.post('https://uibixproject.herokuapp.com/signin',user)
                 .then(res =>{
                     let responsoeOfRequest = res.data;
                     // console.log(responsoeOfRequest)
@@ -187,7 +187,7 @@ export class SignInForm extends Component {
                 username : this.state.forminputname,
                 newpassword : this.state.newpassword
             }
-            axios.post('http://localhost:9000/signin/resetpassowrd',user)
+            axios.post('https://uibixproject.herokuapp.com/resetpassowrd',user)
             .then(res =>{
                 let responsoeOfRequest = res.data;
                 // console.log(responsoeOfRequest)

@@ -60,7 +60,7 @@ export class SignUp extends Component {
         confirmataionMessageElement.classList.remove('successMessage')
         
         //send data to BackEnd
-        axios.post('http://localhost:9000/signup',user)
+        axios.post('https://uibixproject.herokuapp.com/signup',user)
             .then(res =>{
                     if(res.data === true){
                         // console.log('data saved');
