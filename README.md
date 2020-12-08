@@ -2,6 +2,8 @@
 
 
 ### Getting Started
+    This is simple MERN STACK application contain Signin page , Signup page and Reset Password Page
+    #### Link for Website => https://uibix.netlify.app/
 
 There are two methods for getting started with this repo.
 
